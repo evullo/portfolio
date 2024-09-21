@@ -19,7 +19,7 @@ import LinkButton from "@/items/LinkButton.vue";
         </div>
 
         <div class="h-96 w-4/5 md:w-2/3 mt-20 xl:mt-28 ml-auto relative z-0 md:h-fit md:translate-x-1 overflow-hidden">
-            <div class="absolute bottom-0 md:top-0 left-0 md:w-2/3 w-full h-2/3 md:h-full bg-gradient-to-t md:bg-gradient-to-r from-black rounded-b-md md:rounded-l-md"></div>
+            <div class="absolute bottom-0 md:top-0 left-0 md:w-2/3 w-full h-2/3 md:h-full bg-gradient-to-t md:bg-gradient-to-r from-black rounded-bl-md md:rounded-l-md"></div>
             <img src="@/assets/img/me3.jpeg" alt="profile picture" class="w-full h-full object-cover rounded-l-md" />
         </div>
       </div>
