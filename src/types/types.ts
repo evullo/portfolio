@@ -23,6 +23,6 @@ export interface LinkButtonProps {
 }
 
 export interface ContactCardProps {
-    icon: string[],
-    linkTo: string
+    icon?: string[],
+    linkTo:string
 }
