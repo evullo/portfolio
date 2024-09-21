@@ -62,9 +62,9 @@ onUnmounted(() => {
 <template>
   <div class="relative w-fit">
     <button id="nextSectionButton" @click="scrollToNextSection"
-            class="fixed bottom-5 md:bottom-0 px-2 left-1/2 -translate-x-[57.5%] m-4 text-text-white flex items-center animate-pulse
+            class="fixed bottom-0 px-2 left-1/2 -translate-x-[57.5%] m-4 text-text-white flex items-center animate-pulse
             focus:hover:animate-none before:-z-10 before:ml-0.5 before:block before:bg-purple before:rounded-full before:w-11
-            before:h-11 before:absolute before:focus:hover:w-full before:transition-all
+            before:h-11 before:absolute before:focus:w-full md:before:hover:w-full before:transition-all
             before:ease-in-out before:duration-500">
       <font-awesome-icon v-bind:class="isLastSection ? 'rotate-180' : ''" icon="fa-solid fa-angle-down"
                          class="aspect-square p-3 rounded-full" size="xl" />

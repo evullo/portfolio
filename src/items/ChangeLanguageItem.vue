@@ -32,7 +32,8 @@
 <template>
   <div class="relative">
     <button id="changeLanguage" @click="handleClick"
-            class="flex items-center gap-2 px-4 py-2 bg-purple rounded-full text-lg transition-all ease-in-out duration-500 focus:hover:bg-purple-dark">
+            class="flex items-center gap-2 px-4 py-2 bg-purple rounded-full text-lg transition-all ease-in-out duration-500 
+            focus:bg-purple-dark md:hover:bg-purple-dark">
       <UsaFlag v-if="locale === 'en'" />
       <FrenchFlag v-else />
       {{ selectedLanguage }}
