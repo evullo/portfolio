@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "lang": {
+      "en": " Anglais",
+      "fr": " Français"
+    }
+  },
+  "home": {
+    "description": "Je transforme vos idées <br/> en solutions numériques.",
+    "download": "Téléchargez mon CV",
+    "view": "Ou consultez le en ligne"
+  },
+  "skills": {
+    "en": "Anglais",
+    "fr": "Français",
+    "tech": "Compétences technologiques",
+    "front": "Compétences front-end",
+    "back": "Compétences back-end",
+    "soft": "Compétences générales"
+  },
+  "next-button": {
+    "next": ["Découvrez mes compétences !", "Contactez moi !", "Revenir en haut de la page"]
+  }
+}
