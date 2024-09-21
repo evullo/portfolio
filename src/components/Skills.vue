@@ -32,13 +32,13 @@ const softSkillsList = computed<ProgressProps[]>(() => [
 <template>
   <section class="h-dvh w-full md:w-2/3 mx-auto" id="skills">
     <div class="flex flex-col ml-5 gap-4 my-4 md:ml-0 md:flex-row md:my-20">
-      <SkillsListing :skills=webSkillsList>Web</SkillsListing>
-      <SkillsListing :skills=frameworkSkillsList>Frameworks</SkillsListing>
+      <SkillsListing :skills=webSkillsList>{{ t("skills.web") }}</SkillsListing>
+      <SkillsListing :skills=frameworkSkillsList>{{ t("skills.framework") }}</SkillsListing>
     </div>
 
     <div class="flex flex-col ml-5 gap-4 my-4 md:ml-0 md:flex-row md:my-20">
-      <SkillsListing :skills=backEndSkillsList>Back End</SkillsListing>
-      <SkillsListing :skills=softSkillsList>Soft</SkillsListing>
+      <SkillsListing :skills=backEndSkillsList>{{ t("skills.back") }}</SkillsListing>
+      <SkillsListing :skills=softSkillsList>{{ t("skills.other") }}</SkillsListing>
     </div>
   </section>
 </template>

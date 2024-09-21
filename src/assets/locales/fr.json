@@ -16,10 +16,10 @@
   "skills": {
     "en": "Anglais",
     "fr": "Français",
-    "tech": "Compétences technologiques",
-    "front": "Compétences front-end",
-    "back": "Compétences back-end",
-    "soft": "Compétences générales"
+    "web": "Compétences web",
+    "framework": "Frameworks/Librairies",
+    "back": "Compétences backend",
+    "other": "Autres compétences"
   },
   "next-button": {
     "next": ["Découvrez mes compétences !", "Contactez moi !", "Revenir en haut de la page"]

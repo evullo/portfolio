@@ -16,10 +16,10 @@
   "skills": {
     "en": "English",
     "fr": "French",
-    "tech": "Technologies skills",
-    "front": "Front-end skills",
-    "back": "Back-end skills",
-    "soft": "Soft skills"
+    "web": "Web skills",
+    "framework": "Frameworks/Libraries",
+    "back": "Backend skills",
+    "other": "Other skills"
   },
   "next-button": {
     "next": ["Discover my skills !", "Contact me !", "Go back to the top of the page"]
