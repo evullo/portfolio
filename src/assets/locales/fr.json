@@ -21,7 +21,12 @@
     "back": "Compétences backend",
     "other": "Autres compétences"
   },
+  "contact": {
+    "title": "Contactez moi pour qu'on puisse travailler ensemble !",
+    "linkedin": "Contactez moi via LinkedIn!",
+    "mail": "Ou via mail à "
+  },
   "next-button": {
-    "next": ["Découvrez mes compétences !", "Contactez moi !", "Revenir en haut de la page"]
+    "next": ["Découvrez mes compétences !", "Contactez moi !", "Revenir en haut !"]
   }
 }

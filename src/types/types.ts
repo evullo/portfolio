@@ -21,3 +21,8 @@ export interface LinkButtonProps {
     icon: string,
     targetBlank?: boolean,
 }
+
+export interface ContactCardProps {
+    icon: string[],
+    linkTo: string
+}
