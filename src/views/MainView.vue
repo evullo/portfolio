@@ -9,16 +9,15 @@ import NextSectionButton from "@/items/NextSectionButton.vue"
 import { ref, onMounted, onUnmounted } from "vue"
 
 const isMobile = ref(false)
-const sections = ref<HTMLCollection | null>(null)
+const sections = ref<HTMLElement[] | null>(null)
+const main = ref<HTMLElement | null>(null)
 
 const checkIfMobile = () => {
   isMobile.value = window.matchMedia("(max-width: 768px)").matches
 }
 
 onMounted(() => {
-  const main = document.querySelector('main')
-  sections.value = main ? main.children : null
-
+  sections.value = main.value ? Array.from(main.value.children) as HTMLElement[] : null
   checkIfMobile()
   window.addEventListener('resize', checkIfMobile)
 })
@@ -31,7 +30,7 @@ onUnmounted(() => {
 <template>
   <component :is="isMobile ? NavbarMobile : Navbar" />
 
-  <main>
+  <main ref="main">
     <Home />
     <Skills />
     <Contact />

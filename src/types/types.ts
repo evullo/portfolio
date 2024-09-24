@@ -3,7 +3,7 @@ export interface NavItemProps {
 }
 
 export interface NextSectionProps {
-    sections: HTMLCollection | null,
+    sections: HTMLElement[] | null,
 }
 
 export interface ProgressProps {

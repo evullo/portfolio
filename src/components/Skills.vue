@@ -31,6 +31,8 @@ const softSkillsList = computed<ProgressProps[]>(() => [
 
 <template>
   <section class="h-dvh w-full md:w-2/3 mx-auto" id="skills">
+    <h2 class="text-3xl text-center md:my-5">{{ $t("skills.title") }}</h2>
+
     <div class="flex flex-col ml-5 gap-4 my-4 md:ml-0 md:flex-row md:my-20">
       <SkillsListing :skills=webSkillsList>{{ t("skills.web") }}</SkillsListing>
       <SkillsListing :skills=frameworkSkillsList>{{ t("skills.framework") }}</SkillsListing>

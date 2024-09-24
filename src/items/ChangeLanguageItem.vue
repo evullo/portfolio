@@ -39,7 +39,7 @@
       {{ selectedLanguage }}
     </button>
 
-    <ul v-if="showLanguages" class="dropdown-content absolute mt-2 px-6 py-2 left-1/2 -translate-x-1/2 rounded-lg shadow-lg bg-purple text-lg mobile-menu">
+    <ul v-if="showLanguages" class="dropdown-content absolute mt-2 px-6 py-2 left-1/2 -translate-x-1/2 rounded-lg shadow-lg bg-purple text-lg">
       <li class="mb-2">
         <button class="relative flex items-center gap-2 after:rounded-md after:bg-white after:absolute after:h-0.5 after:w-0 after:bottom-0
         after:left-0 hover:after:w-full after:transition-all after:duration-300 disabled:opacity-60 disabled:hover:after:hidden"
@@ -72,20 +72,5 @@
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent #8F00FF transparent;
-}
-
-/* Comportement spécifique pour les mobiles */
-@media (max-width: 768px) {
-  .mobile-menu {
-    bottom: 100%; /* Place le menu vers le haut */
-    margin-bottom: 10px;
-    margin-top: 0; /* Supprime la marge supérieure */
-  }
-
-  .dropdown-content::before {
-    bottom: -10px; /* Flèche en bas */
-    top: auto;
-    border-color: #8F00FF transparent transparent transparent; /* Inverse la flèche */
-  }
 }
 </style>

@@ -28,12 +28,12 @@ const closeMenu = () => {
             <MenuToggleItem ref="menuBackground" :open="isMenuOpen" @toggle="handleToggle"></MenuToggleItem>
 
             <Transition name="slide-fade">
-                <ul v-show="isMenuOpen" class="mt-20 mx-2 z-50 absolute h-[90vh] w-44 top-0 flex flex-col gap-6">
+                <ul v-show="isMenuOpen" class="mt-20 mx-2 z-50 absolute w-44 top-0 flex flex-col gap-6">
                     <NavItem link-to="home" @click="closeMenu" class="mt-5 ml-2">{{ $t("nav.home") }}</NavItem>
                     <NavItem link-to="skills" @click="closeMenu" class="ml-2">{{ $t("nav.skills") }}</NavItem>
                     <NavItem link-to="contact" @click="closeMenu" class="ml-2">{{ $t("nav.contact") }}</NavItem>
 
-                    <ChangeLanguageItem class="mx-auto mt-auto mb-10"></ChangeLanguageItem>
+                    <ChangeLanguageItem class="mx-auto mt-5"></ChangeLanguageItem>
                 </ul>
             </Transition>
     
