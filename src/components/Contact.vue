@@ -3,7 +3,7 @@ import ContactCard from '@/items/ContactCard.vue'
 </script>
 
 <template>
-  <section class="h-dvh" id="contact">
+  <section class="h-[75vh]" id="contact">
     <h2 class="text-3xl text-center md:my-5">{{ $t("contact.title") }}</h2>
 
     <div class="flex flex-col h-full mt-10 gap-4 md:gap-10 w-5/6 items-center md:flex-row md:justify-center lg:w-3/4 md:h-1/2 mx-auto">
