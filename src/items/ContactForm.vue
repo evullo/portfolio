@@ -62,22 +62,22 @@ const checkMessage = () => {
 </script>
 
 <template>
-  <form ref="form" @submit="sendEmail" class="flex flex-col w-full md:w-2/3">
-    <label>{{ $t('contact.name') }}</label>
-    <input type="text" @input="checkName" v-model="name" name="from_name" class="px-2 py-1 rounded-md text-purple-dark">
-    <span v-show="nameError" class="text-red-500">{{ nameError }}</span>
+  <form ref="form" @submit="sendEmail" class="flex flex-col w-full md:w-1/2">
+    <label class="mb-1">{{ $t('contact.name') }}</label>
+    <input type="text" @input="checkName" v-model="name" name="from_name" class="px-2 py-1 rounded-md text-purple-dark focus:outline-purple">
+    <span v-show="nameError" class="text-red-500 mt-1">{{ nameError }}</span>
     
-    <label class="mt-4">{{ $t('contact.email') }}</label>
-    <input type="email" @input="validEmail" v-model="email" name="reply_to" class="px-2 py-1 rounded-md text-purple-dark">
-    <span v-show="emailError" class="text-red-500">{{ emailError }}</span>
+    <label class="mb-1 mt-4">{{ $t('contact.email') }}</label>
+    <input type="email" @input="validEmail" v-model="email" name="reply_to" class="px-2 py-1 rounded-md text-purple-dark focus:outline-purple">
+    <span v-show="emailError" class="text-red-500 mt-1">{{ emailError }}</span>
     
-    <label class="mt-4">{{ $t('contact.message') }}</label>
-    <textarea @input="checkMessage" v-model="message" name="message" class="px-2 py-1 rounded-md text-purple-dark"></textarea>
-    <span v-show="messageError" class="text-red-500">{{ emailError }}</span>
+    <label class="mb-1 mt-4">{{ $t('contact.message') }}</label>
+    <textarea @input="checkMessage" v-model="message" name="message" class="px-2 py-1 rounded-md text-purple-dark focus:outline-purple"></textarea>
+    <span v-show="messageError" class="text-red-500 mt-1">{{ emailError }}</span>
     
-    <input type="submit" :value="$t('contact.send')" class="bg-purple rounded-md py-1 mt-4 cursor-pointer transition-all ease-in-out duration-500 focus:bg-purple-dark md:hover:bg-purple-dark">
+    <input type="submit" :value="$t('contact.send')" class="bg-purple rounded-md py-1 md:py-2 mt-4 cursor-pointer transition-all ease-in-out duration-50 hover:bg-purple-dark">
     
-    <span v-show="success" class="text-green-500 text-center">{{ $t('contact.success') }}</span>
-    <span v-show="error" class="text-red-500 text center">{{ $t('contact.error') }}</span>
+    <span v-show="success" class="text-green-500 mt-4">{{ $t('contact.success') }}</span>
+    <span v-show="error" class="text-red-500r mt-4">{{ $t('contact.error') }}</span>
   </form>
 </template>
