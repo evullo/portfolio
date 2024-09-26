@@ -25,7 +25,16 @@
   "contact": {
     "title": "Contact me so we can work together !",
     "linkedin": "Contact me via LinkedIn!",
-    "mail": "Or via mail at "
+    "orMail": "Or via email ",
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "send": "Send message",
+    "nameError": "Your name must contain at least 3 characters",
+    "emailError": "Your email is not valid",
+    "messageError": "Your message cannot be empty",
+    "success": "Your message has been sent successfully !",
+    "error": "We were unable to send your message"
   },
   "next-button": {
     "next": ["Discover my skills !", "Contact me !", "Go back to the top !"]
